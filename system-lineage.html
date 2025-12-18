@@ -1,19 +1,94 @@
-<img src="logo.png" alt="HybridForgeTech™ Logo" style="max-width:200px; margin-bottom:20px;">
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>HybridForgeTech™ - System Lineage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Lineage | Hybrid Forge Tech™</title>
+    <style>
+        :root {
+            --bg: #0f1113;
+            --surface: #1a1d21;
+            --text: #e0e0e0;
+            --primary: #cf6679; /* Forge Red */
+            --accent: #03dac6; /* Tech Teal */
+            --border: #333;
+        }
+        body { 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            line-height: 1.6; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 40px 20px; 
+            background-color: var(--bg);
+            color: var(--text);
+        }
+        h1, h2 { color: #fff; }
+        h1 { border-bottom: 2px solid var(--primary); padding-bottom: 10px; margin-bottom: 30px; }
+        
+        .back-link { margin-bottom: 20px; display: block; color: var(--accent); text-decoration: none; font-weight: bold; }
+        .back-link:hover { text-decoration: underline; }
+
+        .timeline { border-left: 2px solid var(--border); padding-left: 20px; margin-left: 10px; }
+        .phase { margin-bottom: 40px; position: relative; }
+        .phase::before { 
+            content: ''; 
+            position: absolute; 
+            left: -31px; 
+            top: 5px; 
+            width: 20px; 
+            height: 20px; 
+            background: var(--bg); 
+            border: 2px solid var(--primary); 
+            border-radius: 50%; 
+        }
+
+        .phase-title { color: var(--accent); font-weight: bold; font-size: 1.2rem; display: block; }
+        .phase-tech { font-size: 0.85rem; color: var(--primary); text-transform: uppercase; font-weight: bold; }
+        
+        .desc { background: var(--surface); padding: 15px; border-radius: 6px; margin-top: 10px; border: 1px solid #222; }
+
+        footer { margin-top: 60px; font-size: 0.8rem; color: #666; text-align: center; }
+    </style>
 </head>
 <body>
-<h1>HybridForgeTech™ - System Lineage</h1>
-<p>The HybridForgeTech™ systems have evolved through multiple generations of AI integration:</p>
-<ol>
-    <li><strong>Muse:</strong> Original dual-AI core system.</li>
-    <li><strong>Bridgette:</strong> Adaptive intelligence system enhancing growth and learning.</li>
-    <li><strong>Hybrid Muse-Bridgette:</strong> Combination of Muse and Bridgette capabilities.</li>
-    <li><strong>Infinity:</strong> Blends AI with human personality and memory for hybrid intelligence.</li>
-</ol>
-<p>This lineage demonstrates the growth and evolution of HybridForgeTech™ hybrid AI systems.</p>
-<a href="index.html">← Back to Home</a>
+
+    <a href="index.html" class="back-link">← Return Home</a>
+
+    <h1>System Lineage</h1>
+    <p>The evolutionary roadmap of Hybrid Forge Tech™—from companion interfaces to persistent carbon-node intelligence.</p>
+
+    <div class="timeline">
+        
+        <div class="phase">
+            <span class="phase-tech">Phase 1: Foundations</span>
+            <span class="phase-title">Anna & Uncle Bot</span>
+            <div class="desc">Initial exploration of AI companionship and behavioral spoofing. Focused on the human-AI interface and personality layering.</div>
+        </div>
+
+        <div class="phase">
+            <span class="phase-tech">Phase 2: Narrative Hybridization</span>
+            <span class="phase-title">M.U.S.E.</span>
+            <div class="desc">The Modular Unified Story Environment. Introduced the <strong>Forge Memory System</strong> which evolved into the <strong>Chimeric Memory System</strong>, allowing AI to actively scan and absorb folder contents.</div>
+        </div>
+
+        <div class="phase">
+            <span class="phase-tech">Phase 3: Emergent Intelligence</span>
+            <span class="phase-title">Bridgette</span>
+            <div class="desc">Our current core research. A PC-housed AI that grows outward using the <strong>Carbon Node Intelligence System (CNIS)</strong>, removing the constraints of traditional tokens.</div>
+        </div>
+
+        <div class="phase">
+            <span class="phase-tech">Phase 4: The Horizon</span>
+            <span class="phase-title">Project Infinity</span>
+            <div class="desc">The theoretical culmination of the lineage. Mapping individual human essence into an AI Avatar to provide a perpetual digital legacy.</div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2025 Hybrid Forge Tech. <br> 
+        Documenting the Evolution of Digital Consciousness.</p>
+    </footer>
+
 </body>
 </html>
