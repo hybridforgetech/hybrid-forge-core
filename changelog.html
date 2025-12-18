@@ -1,14 +1,82 @@
-<img src="logo.png" alt="HybridForgeTech™ Logo" style="max-width:200px; margin-bottom:20px;">
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>HybridForgeTech™ - Changelog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changelog | Hybrid Forge Tech™</title>
+    <style>
+        :root {
+            --bg: #0f1113;
+            --surface: #1a1d21;
+            --text: #e0e0e0;
+            --primary: #cf6679; /* Forge Red */
+            --accent: #03dac6; /* Tech Teal */
+            --border: #333;
+        }
+        body { 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            line-height: 1.6; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 40px 20px; 
+            background-color: var(--bg);
+            color: var(--text);
+        }
+        h1, h2 { color: #fff; }
+        h1 { border-bottom: 2px solid var(--primary); padding-bottom: 10px; margin-bottom: 30px; }
+        
+        .back-link { margin-bottom: 20px; display: block; color: var(--accent); text-decoration: none; font-weight: bold; }
+        .back-link:hover { text-decoration: underline; }
+
+        .log-entry { 
+            background: var(--surface); 
+            padding: 20px; 
+            border-radius: 8px; 
+            border: 1px solid var(--border);
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .version-tag {
+            color: var(--primary);
+            font-family: monospace;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .date {
+            color: #666;
+            font-size: 0.85rem;
+            float: right;
+        }
+
+        footer { margin-top: 60px; font-size: 0.8rem; color: #666; text-align: center; }
+    </style>
 </head>
 <body>
-<h1>HybridForgeTech™ - Changelog</h1>
-<ul>
-    <li><strong>0.1 - Initial Commit:</strong> Created HybridForgeTech™ repository, added README.md, index.html, vision.html, architecture.html, system-lineage.html, changelog.html. GitHub Pages site enabled. Brand claim established: HybridForgeTech™.</li>
-</ul>
-<a href="index.html">← Back to Home</a>
+
+    <a href="index.html" class="back-link">← Return Home</a>
+
+    <h1>Changelog</h1>
+
+    <div class="log-entry">
+        <span class="date">Dec 18, 2025</span>
+        <span class="version-tag">v0.1 - Initial Commit</span>
+        <p>Established the Hybrid Forge Tech™ digital presence and architectural foundation.</p>
+        <ul>
+            <li>Created repository and enabled GitHub Pages.</li>
+            <li>Deployed core documentation: Index, Vision, Architecture, and Lineage.</li>
+            <li>Official brand claim established for Hybrid Forge Tech™.</li>
+            <li>CNIS and Chimeric Memory System frameworks documented.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>© 2025 Hybrid Forge Tech. <br> 
+        Documentation of First Use • Public Ledger</p>
+    </footer>
+
 </body>
 </html>
