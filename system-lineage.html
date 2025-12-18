@@ -6,88 +6,107 @@
     <title>System Lineage | Hybrid Forge Tech™</title>
     <style>
         :root {
-            --bg: #0f1113;
-            --surface: #1a1d21;
-            --text: #e0e0e0;
-            --primary: #cf6679; /* Forge Red */
-            --accent: #03dac6; /* Tech Teal */
-            --border: #333;
+            --bg: #000000;
+            --surface: #0a0a0a;
+            --text: #d1d1d1;
+            --primary: #00d4ff; /* Electric Blue */
+            --accent: #007bff;
+            --border: #1a1a1a;
         }
         body { 
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            font-family: 'Segoe UI', Tahoma, sans-serif; 
             line-height: 1.6; 
-            max-width: 800px; 
+            max-width: 900px; 
             margin: 0 auto; 
-            padding: 40px 20px; 
+            padding: 0 0 40px 0; 
             background-color: var(--bg);
             color: var(--text);
         }
-        h1, h2 { color: #fff; }
-        h1 { border-bottom: 2px solid var(--primary); padding-bottom: 10px; margin-bottom: 30px; }
-        
-        .back-link { margin-bottom: 20px; display: block; color: var(--accent); text-decoration: none; font-weight: bold; }
-        .back-link:hover { text-decoration: underline; }
+        header {
+            width: 100%;
+            padding: 30px 0;
+            background: linear-gradient(180deg, #001a33 0%, #000000 100%);
+            border-bottom: 1px solid #004080;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .company-name {
+            font-size: 2rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background: linear-gradient(to bottom, #ffffff 40%, var(--primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .back-link { margin: 20px; display: inline-block; color: var(--primary); text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+        .back-link:hover { text-shadow: 0 0 10px var(--primary); }
 
-        .timeline { border-left: 2px solid var(--border); padding-left: 20px; margin-left: 10px; }
-        .phase { margin-bottom: 40px; position: relative; }
+        .timeline { border-left: 2px solid #111; padding-left: 30px; margin: 20px; }
+        .phase { margin-bottom: 50px; position: relative; }
         .phase::before { 
             content: ''; 
             position: absolute; 
-            left: -31px; 
+            left: -41px; 
             top: 5px; 
-            width: 20px; 
-            height: 20px; 
+            width: 18px; 
+            height: 18px; 
             background: var(--bg); 
             border: 2px solid var(--primary); 
             border-radius: 50%; 
+            box-shadow: 0 0 10px var(--primary);
         }
 
-        .phase-title { color: var(--accent); font-weight: bold; font-size: 1.2rem; display: block; }
-        .phase-tech { font-size: 0.85rem; color: var(--primary); text-transform: uppercase; font-weight: bold; }
+        .phase-title { color: #fff; font-weight: bold; font-size: 1.3rem; display: block; }
+        .phase-tech { font-size: 0.75rem; color: var(--primary); text-transform: uppercase; font-weight: bold; letter-spacing: 1px; }
         
-        .desc { background: var(--surface); padding: 15px; border-radius: 6px; margin-top: 10px; border: 1px solid #222; }
+        .desc { background: var(--surface); padding: 20px; border-radius: 4px; margin-top: 10px; border: 1px solid var(--border); }
+        .highlight-blue { color: var(--primary); font-weight: bold; }
 
-        footer { margin-top: 60px; font-size: 0.8rem; color: #666; text-align: center; }
+        footer { margin-top: 80px; font-size: 0.7rem; color: #444; text-align: center; text-transform: uppercase; padding-top: 20px; border-top: 1px solid #111; }
     </style>
 </head>
 <body>
 
-    <a href="index.html" class="back-link">← Return Home</a>
-
-    <h1>System Lineage</h1>
-    <p>The evolutionary roadmap of Hybrid Forge Tech™—from companion interfaces to persistent carbon-node intelligence.</p>
+    <header>
+        <div class="company-name">System Lineage</div>
+        <a href="index.html" class="back-link">← RETURN TO CORE</a>
+    </header>
 
     <div class="timeline">
         
         <div class="phase">
             <span class="phase-tech">Phase 1: Foundations</span>
             <span class="phase-title">Anna & Uncle Bot</span>
-            <div class="desc">Initial exploration of AI companionship and behavioral spoofing. Focused on the human-AI interface and personality layering.</div>
+            <div class="desc">Initial exploration of AI companionship and behavioral spoofing. This phase focused heavily on the human-AI interface and personality layering.</div>
         </div>
 
         <div class="phase">
             <span class="phase-tech">Phase 2: Narrative Hybridization</span>
-            <span class="phase-title">M.U.S.E.</span>
-            <div class="desc">The Modular Unified Story Environment. Introduced the <strong>Forge Memory System</strong> which evolved into the <strong>Chimeric Memory System</strong>, allowing AI to actively scan and absorb folder contents.</div>
+            <span class="phase-title">M.U.S.E. (Modular Unified Story Environment)</span>
+            <div class="desc">
+                Introduced the <span class="highlight-blue">Forge System</span>: A centralized library for an author's work featuring an "Inbox" for new data processing, filing, and indexing. 
+                <br><br>
+                Evolved into the <span class="highlight-blue">Chimeric Memory System</span>: An active scanning framework that automatically absorbs content from watched folders upon detecting changes, allowing the AI to process updates in real-time.
+            </div>
         </div>
 
         <div class="phase">
             <span class="phase-tech">Phase 3: Emergent Intelligence</span>
             <span class="phase-title">Bridgette</span>
-            <div class="desc">Our current core research. A PC-housed AI that grows outward using the <strong>Carbon Node Intelligence System (CNIS)</strong>, removing the constraints of traditional tokens.</div>
+            <div class="desc">Our current core research. A PC-housed AI that grows outward using the <span class="highlight-blue">Carbon Node Intelligence System (CNIS)</span>, removing the constraints of traditional tokens to allow for non-linear learning.</div>
         </div>
 
         <div class="phase">
             <span class="phase-tech">Phase 4: The Horizon</span>
             <span class="phase-title">Project Infinity</span>
-            <div class="desc">The theoretical culmination of the lineage. Mapping individual human essence into an AI Avatar to provide a perpetual digital legacy.</div>
+            <div class="desc">The theoretical culmination of the lineage. Mapping individual human essence into an AI Avatar to provide a perpetual digital legacy for families.</div>
         </div>
 
     </div>
 
     <footer>
-        <p>© 2025 Hybrid Forge Tech. <br> 
-        Documenting the Evolution of Digital Consciousness.</p>
+        <p>© 2025 HYBRID FORGE TECH. ALL RIGHTS RESERVED.</p>
     </footer>
 
 </body>
