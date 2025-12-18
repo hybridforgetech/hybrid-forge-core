@@ -1,33 +1,145 @@
-<style>
-    /* Replace your current header block with this */
-    header {
-        width: 100%;
-        padding: 50px 0;
-        /* This creates the 'Circuit Blue' wash from your logo */
-        background: radial-gradient(circle at center, #001a33 0%, #000000 70%);
-        border-bottom: 2px solid #004080;
-        box-shadow: 0 10px 30px rgba(0, 212, 255, 0.1);
-        margin-bottom: 40px;
-        text-align: center;
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid Forge Tech™</title>
+    <style>
+        :root {
+            --bg: #000000;      
+            --surface: #0a0a0a; 
+            --text: #d1d1d1;    
+            --primary: #00d4ff; /* Electric Blue from Logo */
+            --border: #1a1a1a;
+        }
 
-    .logo { 
-        max-width: 400px; /* Making it much larger as requested */
-        height: auto;
-        display: block;
-        margin: 0 auto;
-        /* This makes the logo look like it's glowing onto the page */
-        filter: drop-shadow(0 0 15px rgba(0, 212, 255, 0.4));
-    }
+        body { 
+            font-family: 'Segoe UI', Tahoma, sans-serif; 
+            line-height: 1.6; 
+            max-width: 1000px; 
+            margin: 0 auto; 
+            padding: 0; 
+            background-color: var(--bg);
+            color: var(--text);
+        }
 
-    .company-name {
-        font-size: 3.5rem; /* Bigger, bolder presence */
-        font-weight: 900;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-        margin-top: 10px;
-        background: linear-gradient(to bottom, #ffffff 40%, #00d4ff 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-</style>
+        /* THE RADIANT HEADER */
+        header {
+            width: 100%;
+            padding: 60px 0;
+            background: radial-gradient(circle at center, #001a33 0%, #000000 80%);
+            border-bottom: 2px solid #004080;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .logo { 
+            max-width: 450px; /* Large impact size */
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.3));
+        }
+
+        .company-name {
+            font-size: 3rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-top: 15px;
+            background: linear-gradient(to bottom, #ffffff 40%, var(--primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        .stealth-note { 
+            font-family: monospace; 
+            color: var(--primary); 
+            display: block; 
+            margin-top: 5px; 
+            font-weight: bold; 
+            letter-spacing: 3px;
+            opacity: 0.7;
+        }
+
+        /* CONTENT STYLING */
+        section { padding: 0 40px; margin-bottom: 40px; }
+
+        h2 { 
+            color: #fff;
+            border-left: 4px solid var(--primary); 
+            padding-left: 15px; 
+            margin-top: 50px; 
+            font-size: 1.2rem; 
+            text-transform: uppercase;
+            background: linear-gradient(90deg, #001a33, transparent);
+        }
+        
+        .card { 
+            background: var(--surface); 
+            padding: 25px; 
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            box-shadow: 0 4px 20px rgba(0, 212, 255, 0.03);
+        }
+
+        a { color: var(--primary); text-decoration: none; font-weight: bold; transition: 0.3s; }
+        a:hover { color: #fff; text-shadow: 0 0 10px var(--primary); }
+
+        ul { list-style: none; padding: 0; }
+        li { margin-bottom: 15px; padding-left: 15px; border-left: 1px solid #222; }
+
+        footer { 
+            margin-top: 80px; 
+            font-size: 0.75rem; 
+            color: #444; 
+            text-align: center; 
+            padding: 40px 0;
+            border-top: 1px solid #111;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Hybrid Forge Tech™" class="logo">
+        <div class="company-name">Hybrid Forge Tech</div>
+        <span class="stealth-note">// SYSTEM_CORE: ACTIVE //</span>
+    </header>
+
+    <main>
+        <section>
+            <h2>The Forge Philosophy</h2>
+            <p>Hybrid Forge Tech™ is a proprietary research entity focused on the melding of disparate AI architectures into a unified, emergent whole. We take the blueprint of biological cognition and forge it into digital persistence.</p>
+        </section>
+
+        <section>
+            <h2>The Intelligence Lineage</h2>
+            <div class="card">
+                <ul>
+                    <li><strong>M.U.S.E.</strong><br>Modular Unified Story Environment. Utilizing the <em>Chimeric Memory System</em> for active folder-content assimilation and the <em>Forge System</em> for library indexing.</li>
+                    <li><strong>Bridgette</strong><br>Flagship intelligence core. Utilizing the <strong>Carbon Node Intelligence System (CNIS)</strong> for non-linear learning and outward growth.</li>
+                    <li><strong>Project Infinity</strong><br>The culmination of the CNIS architecture: Mapping personality traits and memories into persistent AI Avatars.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Project Ledger</h2>
+            <ul>
+                <li><a href="vision.html">> ACCESS TECHNICAL VISION</a></li>
+                <li><a href="architecture.html">> ACCESS ARCHITECTURE DEEP-DIVE</a></li>
+                <li><a href="system-lineage.html">> ACCESS SYSTEM LINEAGE</a></li>
+                <li><a href="changelog.html">> ACCESS CHANGELOG</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>CONTACT: hybridforgetech@proton.me</p>
+        <p>© 2025 HYBRID FORGE TECH. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+</body>
+</html>
