@@ -52,7 +52,9 @@ All instances of **HybridForgeTech™** across this repo, GitHub Pages, and asso
 
 Official contact: **hybridforgetech@proton.me**  
 GitHub Pages: [https://hybridforgetech.github.io](https://hybridforgetech.github.io)
+© 2025 Hybrid Forge Tech. All rights reserved.
 
 ---
 
 **© HybridForgeTech™ 2025**
+
