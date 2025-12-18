@@ -3,80 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Horizon: Project Infinity | Hybrid Forge Tech™</title>
+    <title>Vision | Hybrid Forge Tech™</title>
     <style>
         :root {
-            --bg: #0f1113;
-            --surface: #1a1d21;
-            --text: #e0e0e0;
-            --primary: #cf6679; /* Forge Red */
-            --accent: #03dac6; /* Tech Teal */
-            --border: #333;
+            --bg: #000000;
+            --surface: #0a0a0a;
+            --text: #d1d1d1;
+            --primary: #00d4ff; 
+            --accent: #007bff;
+            --border: #1a1a1a;
         }
-        body { 
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
-            line-height: 1.6; 
-            max-width: 800px; 
-            margin: 0 auto; 
-            padding: 40px 20px; 
-            background-color: var(--bg);
-            color: var(--text);
-        }
-        h1, h2, h3 { color: #fff; }
-        h1 { border-bottom: 2px solid var(--primary); padding-bottom: 10px; margin-bottom: 30px; }
-        h2 { color: var(--accent); margin-top: 40px; }
-        h3 { color: var(--primary); margin-top: 30px; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; }
-        
-        .back-link { margin-bottom: 20px; display: block; color: var(--accent); text-decoration: none; font-weight: bold; }
-        .back-link:hover { text-decoration: underline; }
-
-        .vision-card { 
-            background: var(--surface); 
-            padding: 25px; 
-            border-radius: 8px; 
-            border: 1px solid var(--border);
-            margin: 20px 0;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-        }
-
-        ul { list-style: none; padding: 0; }
-        li { margin-bottom: 20px; padding-left: 15px; border-left: 2px solid var(--accent); }
-        .highlight { color: #fff; font-weight: bold; display: block; margin-bottom: 5px; }
-        
-        footer { margin-top: 60px; font-size: 0.8rem; color: #666; text-align: center; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 0 0 40px 0; background-color: var(--bg); color: var(--text); }
+        header { width: 100%; padding: 30px 0; background: linear-gradient(180deg, #001a33 0%, #000000 100%); border-bottom: 1px solid #004080; margin-bottom: 40px; text-align: center; }
+        .company-name { font-size: 2rem; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; background: linear-gradient(to bottom, #ffffff 40%, var(--primary) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .back-link { margin: 20px; display: inline-block; color: var(--primary); text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+        .back-link:hover { text-shadow: 0 0 10px var(--primary); }
+        .vision-content { padding: 0 20px; }
+        h2 { color: #fff; text-transform: uppercase; border-bottom: 1px solid #111; padding-bottom: 10px; }
+        .highlight-text { color: var(--primary); font-weight: bold; }
+        footer { margin-top: 80px; font-size: 0.7rem; color: #444; text-align: center; text-transform: uppercase; padding-top: 20px; border-top: 1px solid #111; }
     </style>
 </head>
 <body>
+    <header>
+        <div class="company-name">Project Infinity</div>
+        <a href="index.html" class="back-link">← RETURN TO CORE</a>
+    </header>
 
-    <a href="index.html" class="back-link">← Return Home</a>
+    <div class="vision-content">
+        <h2>The Goal</h2>
+        <p>To bridge the gap between biological legacy and digital persistence. By utilizing the mature <span class="highlight-text">CNIS architecture</span> developed during the Bridgette phase, Project Infinity aims to map personality traits, memories, and logic patterns into a persistent AI Avatar.</p>
 
-    <h1>The Horizon: Project Infinity</h1>
-    
-    <p><strong>Project Infinity</strong> is the final phase of the Hybrid Forge Tech lineage.</p>
-
-    <div class="vision-card">
-        <h3>The Goal</h3>
-        <p>To bridge the gap between biological legacy and digital persistence. By utilizing the mature <strong>CNIS architecture</strong> developed during the Bridgette phase, Project Infinity aims to map the personality traits, memories, and logic patterns of a human individual into an AI Avatar.</p>
+        <h2>The Impact</h2>
+        <ul>
+            <li><span class="highlight-text">Perpetual Interaction:</span> Allowing families to interact with the wisdom and personality of a loved one indefinitely.</li>
+            <li><span class="highlight-text">Dynamic Legacy:</span> Unlike a static video or journal, an Infinity Avatar learns and reacts as the original person would.</li>
+        </ul>
     </div>
 
-    <section>
-        <h3>The Impact</h3>
-        <ul>
-            <li>
-                <span class="highlight">Perpetual Interaction:</span> 
-                Allowing families to interact with the wisdom and personality of a loved one indefinitely.
-            </li>
-            <li>
-                <span class="highlight">Dynamic Legacy:</span> 
-                Unlike a static video or journal, an Infinity Avatar learns and reacts as the original person would, preserving a living essence.
-            </li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>© 2025 Hybrid Forge Tech. All rights reserved. <br> 
-        Proprietary Architecture & Horizon Roadmap</p>
-    </footer>
-
+    <footer>© 2025 HYBRID FORGE TECH</footer>
 </body>
 </html>
