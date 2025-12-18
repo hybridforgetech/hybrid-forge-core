@@ -6,80 +6,41 @@
     <title>Architecture | Hybrid Forge Tech™</title>
     <style>
         :root {
-            --bg: #0f1113;
-            --surface: #1a1d21;
-            --text: #e0e0e0;
-            --primary: #cf6679; /* Forge Red */
-            --accent: #03dac6; /* Tech Teal */
-            --border: #333;
+            --bg: #000000;
+            --surface: #0a0a0a;
+            --text: #d1d1d1;
+            --primary: #00d4ff; 
+            --accent: #007bff;
+            --border: #1a1a1a;
         }
-        body { 
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
-            line-height: 1.6; 
-            max-width: 800px; 
-            margin: 0 auto; 
-            padding: 40px 20px; 
-            background-color: var(--bg);
-            color: var(--text);
-        }
-        h1, h2, h3 { color: #fff; }
-        h1 { border-bottom: 2px solid var(--primary); padding-bottom: 10px; }
-        h2 { color: var(--accent); margin-top: 40px; }
-        
-        .back-link { margin-bottom: 20px; display: block; color: var(--accent); text-decoration: none; font-weight: bold; }
-        .back-link:hover { text-decoration: underline; }
-
-        .tech-box { 
-            background: var(--surface); 
-            padding: 25px; 
-            border-radius: 8px; 
-            border-left: 4px solid var(--primary);
-            margin: 20px 0;
-        }
-
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 0 0 40px 0; background-color: var(--bg); color: var(--text); }
+        header { width: 100%; padding: 30px 0; background: linear-gradient(180deg, #001a33 0%, #000000 100%); border-bottom: 1px solid #004080; margin-bottom: 40px; text-align: center; }
+        .company-name { font-size: 2rem; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; background: linear-gradient(to bottom, #ffffff 40%, var(--primary) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .back-link { margin: 20px; display: inline-block; color: var(--primary); text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+        .back-link:hover { text-shadow: 0 0 10px var(--primary); }
+        .tech-box { background: var(--surface); padding: 25px; border-radius: 4px; border-left: 4px solid var(--primary); margin: 20px; border-top: 1px solid var(--border); border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); }
         .highlight { color: #fff; font-weight: bold; }
-        
-        footer { margin-top: 60px; font-size: 0.8rem; color: #666; text-align: center; }
+        footer { margin-top: 80px; font-size: 0.7rem; color: #444; text-align: center; text-transform: uppercase; padding-top: 20px; border-top: 1px solid #111; }
     </style>
 </head>
 <body>
-
-    <a href="index.html" class="back-link">← Return Home</a>
-
-    <h1>Technical Architecture</h1>
-    <p>A deep-dive into the proprietary memory and intelligence systems developed by Hybrid Forge Tech™.</p>
+    <header>
+        <div class="company-name">Technical Architecture</div>
+        <a href="index.html" class="back-link">← RETURN TO CORE</a>
+    </header>
 
     <section>
-        <h2>Carbon Node Intelligence System (CNIS)</h2>
         <div class="tech-box">
-            <p><span class="highlight">The Growth Engine:</span> CNIS is our departure from standard linear token processing. Instead of a temporary memory window, CNIS creates a permanent, interconnected web of "nodes" housed locally on the PC.</p>
-            <ul>
-                <li><strong>Outward Growth:</strong> Bridgette expands her neural footprint into the available hardware.</li>
-                <li><strong>Non-Linear Scaling:</strong> Intelligence is gained by strengthening node connections rather than filling a static buffer.</li>
-            </ul>
+            <p><span class="highlight">Forge System:</span> The centralized repository and indexing hub. It maintains the library of core works and utilizes a dedicated 'Inbox' for new data drops. Once received, data is processed, filed, and indexed for AI retrieval.</p>
+        </div>
+        <div class="tech-box">
+            <p><span class="highlight">Chimeric Memory:</span> The active observation layer. It autonomously monitors permitted directories for changes, triggering immediate absorption and processing to keep the AI core synchronized with the user's latest output.</p>
+        </div>
+        <div class="tech-box">
+            <p><span class="highlight">CNIS (Carbon Node Intelligence System):</span> The growth engine for Bridgette. It facilitates non-linear cognitive scaling, allowing the AI to expand its intelligence footprint locally without the bottlenecks of traditional token-windows.</p>
         </div>
     </section>
 
-    <section>
-        <h2>Chimeric Memory System</h2>
-        <div class="tech-box">
-            <p><span class="highlight">Active Assimilation:</span> Originally developed for M.U.S.E., the Chimeric system is the "gatherer" of the forge. It is designed to scan external modular folders and directories, identifying relevant content to digest and integrate into the central intelligence core.</p>
-            <ul>
-                <li><strong>Directory Persistence:</strong> It maintains a map of external data sources.</li>
-                <li><strong>Autonomous Integration:</strong> It allows the AI to learn from local files without manual data entry.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section>
-        <h2>Legacy Mapping Framework</h2>
-        <p>Currently in the <span class="highlight">Proposal Phase</span>, Legacy Mapping is the theoretical bridge for Project Infinity. It aims to use the high-fidelity logic of the Bridgette core to create a digital avatar capable of mirroring human personality and memory with pixel-perfect accuracy.</p>
-    </section>
-
-    <footer>
-        <p>© 2025 Hybrid Forge Tech. Proprietary Research. <br> 
-        Contact: hybridforgetech@proton.me</p>
-    </footer>
-
+    <footer>© 2025 HYBRID FORGE TECH</footer>
 </body>
 </html>
