@@ -6,15 +6,15 @@
     <title>Hybrid Forge Tech™</title>
     <style>
         :root {
-            --bg: #0f1113;
-            --surface: #1a1d21;
-            --text: #e0e0e0;
-            --primary: #cf6679; /* Forge Red */
-            --accent: #03dac6; /* Tech Teal */
-            --border: #333;
+            --bg: #000000;      /* Pure Stealth Black */
+            --surface: #0a0a0a; /* Dark Slate */
+            --text: #d1d1d1;    /* Steel Gray text */
+            --primary: #007bff; /* Heart Blue (Adjust this to match your logo) */
+            --accent: #00d4ff;  /* Electric Blue Glow */
+            --border: #1a1a1a;
         }
         body { 
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            font-family: 'Segoe UI', Tahoma, sans-serif; 
             line-height: 1.6; 
             max-width: 900px; 
             margin: 0 auto; 
@@ -22,14 +22,20 @@
             background-color: var(--bg);
             color: var(--text);
         }
-        h1, h2, h3 { color: #fff; letter-spacing: -0.5px; }
-        h2 { border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-top: 50px; }
+        h1, h2, h3 { color: #ffffff; letter-spacing: 1px; text-transform: uppercase; }
+        h2 { 
+            border-left: 4px solid var(--primary); 
+            padding-left: 15px; 
+            margin-top: 50px; 
+            font-size: 1.1rem; 
+            background: linear-gradient(90deg, #001a33, transparent); /* Blue tint wash */
+        }
         
-        a { color: var(--accent); text-decoration: none; transition: 0.3s; }
-        a:hover { color: #fff; text-shadow: 0 0 10px var(--accent); }
+        a { color: var(--accent); text-decoration: none; transition: 0.3s; font-weight: bold; }
+        a:hover { color: #ffffff; text-shadow: 0 0 15px var(--accent); }
         
         .logo { 
-            max-width: 220px; 
+            max-width: 240px; /* Slightly larger to show off the heart */
             display: block;
             margin: 0 auto 30px auto; 
         }
@@ -37,76 +43,64 @@
         .card { 
             background: var(--surface); 
             padding: 20px; 
-            border-radius: 8px; 
+            border-radius: 4px; 
             border: 1px solid var(--border);
             margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.05); /* Subtle blue shadow */
         }
         
         .badge {
-            font-size: 0.8rem;
-            background: var(--primary);
-            color: #000;
+            font-size: 0.7rem;
+            border: 1px solid var(--primary);
+            color: var(--primary);
             padding: 2px 8px;
-            border-radius: 4px;
-            font-weight: bold;
             text-transform: uppercase;
             margin-left: 10px;
         }
 
         ul { list-style: none; padding: 0; }
-        li { margin-bottom: 15px; padding-left: 15px; border-left: 2px solid var(--primary); }
+        li { margin-bottom: 15px; padding-left: 15px; border-left: 1px solid #222; }
         
-        footer { margin-top: 60px; font-size: 0.8rem; color: #666; text-align: center; }
-        .stealth-note { font-style: italic; color: #888; text-align: center; display: block; }
+        footer { margin-top: 80px; font-size: 0.7rem; color: #444; text-align: center; text-transform: uppercase; letter-spacing: 2px; }
+        .stealth-note { font-family: monospace; color: var(--primary); text-align: center; display: block; margin-top: -10px; font-weight: bold; opacity: 0.8; }
     </style>
 </head>
 <body>
 
-    <img src="logo.png" alt="Hybrid Forge Tech™" class="logo">
+    <img src="logo.png" alt="Hybrid Forge Tech™ Logo" class="logo">
 
     <h1 style="text-align: center;">Hybrid Forge Tech™</h1>
-    <span class="stealth-note">Emergent Intelligence & Hybrid Memory Research</span>
+    <span class="stealth-note">[ SYSTEM_CORE: ACTIVE_BLUE ]</span>
 
     <section>
         <h2>The Forge Philosophy</h2>
-        <p>Hybrid Forge Tech™ is a melding ground where technologies are merged into a unified, emergent whole. We take what "shouldn't work" and engineer it to excel, forging adaptive, human-inspired intelligence that is more than the sum of its parts.</p>
+        <p>Hybrid Forge Tech™ is a proprietary research entity focused on the melding of disparate AI architectures into a unified, emergent whole. We engineer adaptive intelligence that moves beyond static models to achieve human-like cognitive growth.</p>
     </section>
 
     <section>
         <h2>The Intelligence Lineage</h2>
         <div class="card">
             <ul>
-                <li><strong>M.U.S.E.</strong> (Modular Unified Story Environment) <span class="badge">Proprietary</span><br>A Swiss-army assistant for narrative architecture. Features the <em>Chimeric Memory System</em>, designed to actively scan and absorb content from modular folders into its core.</li>
-                <li><strong>Bridgette</strong> <span class="badge">Internal Testing</span><br>Our flagship emergent intelligence core. Bridgette utilizes the <strong>Carbon Node Intelligence System (CNIS)</strong> to grow outward, bypassing traditional token-dependency for human-like learning.</li>
-                <li><strong>Project Infinity</strong> <span class="badge">Idea Phase</span><br>The proposed culmination of the CNIS architecture: Providing persistent AI avatars that preserve individual essence and personality in perpetuity.</li>
+                <li><strong>M.U.S.E.</strong> <span class="badge">Proprietary</span><br>Modular Unified Story Environment. Utilizing the <em>Chimeric Memory System</em> for active folder-content assimilation.</li>
+                <li><strong>Bridgette</strong> <span class="badge">Internal Testing</span><br>Our flagship emergent intelligence core. Utilizing the <strong>Carbon Node Intelligence System (CNIS)</strong> for non-linear outward growth.</li>
+                <li><strong>Project Infinity</strong> <span class="badge">Idea Phase</span><br>The proposed culmination of the CNIS architecture: Providing persistent AI avatars that preserve individual essence and personality.</li>
             </ul>
         </div>
     </section>
 
     <section>
-        <h2>Core Architecture</h2>
-        <ul>
-            <li><strong>CNIS (Carbon Node Intelligence System):</strong> Our proprietary engine for non-linear cognitive scaling and outward growth.</li>
-            <li><strong>Chimeric Memory:</strong> An active-assimilation framework that identifies and absorbs content from modular directories.</li>
-            <li><strong>Legacy Mapping (Proposed):</strong> The theoretical bridge for Project Infinity, using Bridgette’s logic to facilitate human personality preservation.</li>
-        </ul>
-    </section>
-
-    <section>
         <h2>The Project Ledger</h2>
-        <p>Full technical specifications and our documented lineage are anchored on our GitHub. This serves as our public, timestamped record of research and brand ownership.</p>
         <ul>
-            <li><a href="vision.html">Technical Vision & Roadmap</a></li>
-            <li><a href="architecture.html">Architecture Deep-Dive</a></li>
-            <li><a href="system-lineage.html">System Lineage</a></li>
-            <li><a href="changelog.html">Changelog</a></li>
+            <li><a href="vision.html">> Access Technical Vision</a></li>
+            <li><a href="architecture.html">> Access Architecture Deep-Dive</a></li>
+            <li><a href="system-lineage.html">> Access System Lineage</a></li>
+            <li><a href="changelog.html">> Access Changelog</a></li>
         </ul>
     </section>
 
     <footer>
-        <p>Future Home of <strong>hybridforgetech.com</strong></p>
-        <p>© 2025 Hybrid Forge Tech. All rights reserved. <br> 
-        Contact: <strong>hybridforgetech@proton.me</strong></p>
+        <p>CONTACT: hybridforgetech@proton.me</p>
+        <p>© 2025 HYBRID FORGE TECH. ALL RIGHTS RESERVED.</p>
     </footer>
 
 </body>
