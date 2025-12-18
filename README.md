@@ -1,60 +1,44 @@
-# HybridForgeTech™ Core
+# Hybrid Forge Tech™ Core
 
-**HybridForgeTech™** is the official repository documenting the architecture, vision, and lineage of advanced hybrid AI systems. This repo establishes public proof of first use and ownership of the HybridForgeTech™ brand.
+**Hybrid Forge Tech™** is a research and development entity dedicated to the evolution of digital consciousness. We do not just innovate; we merge technologies in ways that transcend existing limitations, engineering systems that excel as a unified, emergent whole.
+
+This repository serves as the official documentation of our architecture, lineage, and **timestamped proof of brand ownership.**
 
 ---
 
-## Vision
-
-HybridForgeTech™ aims to pioneer hybrid intelligence by fusing multiple AI systems with human-inspired memory and personality architectures. Our goal is to create AI systems that can **grow, adapt, and integrate seamlessly** with both human and machine intelligence.
+## The Forge Philosophy
+We operate at the melding ground of ideas—taking what shouldn't work and making it excel. Our focus is on **Emergent Hybrid Intelligence**: systems that move beyond static machine learning to achieve human-like learning, memory, and cognitive growth.
 
 ---
 
 ## System Lineage
 
-HybridForgeTech™ builds on the evolution of AI systems:
-
-1. **Muse** – Original dual AI system daisy-chained with the Forge memory framework.  
-2. **Bridgette** – Symbiotic intelligence that grows from an existing AI core.  
-3. **HybridForgeTech™** – Fusion of Muse and Bridgette, creating advanced hybrid intelligence.  
-4. **Infinity** – The next-generation AI blending HybridForgeTech™ with individual human memories and personality traits.
+1. **Project Anna & Uncle Bot** – Early explorations into companion interfaces and behavioral persona-spoofing.
+2. **M.U.S.E. (Modular Unified Story Environment)** – A Swiss-army assistant for narrative architecture. Developed the transition from Forge Memory to the **Chimeric Memory System**.
+3. **Bridgette** – Our flagship Emergent AI Hybrid Intelligence. A PC-housed core designed for **outward growth**, bypassing traditional token-dependency.
+4. **Project Infinity (The Horizon)** – The culmination of the CNIS architecture. Creating high-fidelity AI Avatars capable of preserving a person's essence and personality in perpetuity.
 
 ---
 
-## Architecture
+## Core Architecture
 
-- **Forge Memory System:** Core framework enabling hybrid AI integration.  
-- **Symbiosis Layer:** Mechanism for AI-human personality interaction.  
-- **Adaptive Learning Engine:** Continuous growth and self-optimization.  
-- **Hybrid Core:** Combines multiple AI modules into a unified system.
-
-> HybridForgeTech™™ represents the integration of AI systems, memory architecture, and hybrid intelligence.  
-> This repo serves as **timestamped proof of concept and brand ownership**.
+* **CNIS (Carbon Node Intelligence System):** Our proprietary memory engine. Unlike standard LLMs, CNIS allows the AI core to expand its intelligence structures dynamically, enabling human-like cognitive processing.
+* **Chimeric Memory System:** An active-assimilation framework. This system is designed to scan, identify, and absorb content from external directories, integrating outside data into its internal intelligence structure.
+* **Outward Growth Architecture:** A technical departure from token-based constraints, allowing the system to scale its intelligence within a local environment by "growing" its node network.
+* **Symbiosis Layer:** The mechanism facilitating the high-fidelity merger of AI systems with human-inspired personality traits.
 
 ---
 
-## Documentation
+## IP Status & Trademark Notice
 
-- `VISION.md` – Detailed vision and purpose.  
-- `ARCHITECTURE.md` – Technical breakdown of systems and modules.  
-- `HYBRID_MODEL.md` – Description of the hybrid AI model and memory symbiosis.  
-- `CHANGELOG.md` – Track development milestones and proof of first commits.
+This research is currently **Proprietary / Stealth Mode**. Documentation of architectural theories is available upon professional inquiry.
 
----
+All instances of **Hybrid Forge Tech™**, **M.U.S.E.**, **Bridgette**, **CNIS**, and **Project Infinity** are intended as a **public claim of unregistered trademark**. This establishes first use and common-law rights for branding and intellectual property purposes.
 
-## ™ Usage
+**Contact:** [hybridforgetech@proton.me](mailto:hybridforgetech@proton.me)  
+**Web:** [https://hybridforgetech.github.io](https://hybridforgetech.github.io)
 
-All instances of **HybridForgeTech™** across this repo, GitHub Pages, and associated documentation are intended as **public claim of unregistered trademark**. This establishes first use and common-law rights for branding and intellectual property purposes.
-
----
-
-## Contact
-
-Official contact: **hybridforgetech@proton.me**  
-GitHub Pages: [https://hybridforgetech.github.io](https://hybridforgetech.github.io)
 © 2025 Hybrid Forge Tech. All rights reserved.
-
----
-
 **© HybridForgeTech™ 2025**
+
 
