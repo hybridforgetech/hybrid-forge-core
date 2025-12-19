@@ -1,33 +1,100 @@
-<style>
-    /* Replace your current header block with this */
-    header {
-        width: 100%;
-        padding: 50px 0;
-        /* This creates the 'Circuit Blue' wash from your logo */
-        background: radial-gradient(circle at center, #001a33 0%, #000000 70%);
-        border-bottom: 2px solid #004080;
-        box-shadow: 0 10px 30px rgba(0, 212, 255, 0.1);
-        margin-bottom: 40px;
-        text-align: center;
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changelog | Hybrid Forge Tech™</title>
+    <style>
+        :root {
+            --bg: #000000;
+            --surface: #0a0a0a;
+            --text: #d1d1d1;
+            --primary: #00d4ff; 
+            --accent: #007bff;
+            --border: #1a1a1a;
+        }
+        body { 
+            font-family: 'Segoe UI', Tahoma, sans-serif; 
+            line-height: 1.6; 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 0 0 40px 0; 
+            background-color: var(--bg); 
+            color: var(--text); 
+        }
+        header { 
+            width: 100%; 
+            padding: 30px 0; 
+            background: linear-gradient(180deg, #001a33 0%, #000000 100%); 
+            border-bottom: 1px solid #004080; 
+            margin-bottom: 40px; 
+            text-align: center; 
+        }
+        .company-name { 
+            font-size: 2rem; 
+            font-weight: 800; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+            background: linear-gradient(to bottom, #ffffff 40%, var(--primary) 100%); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+        }
+        .back-link { margin: 20px; display: inline-block; color: var(--primary); text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+        .back-link:hover { text-shadow: 0 0 10px var(--primary); }
 
-    .logo { 
-        max-width: 400px; /* Making it much larger as requested */
-        height: auto;
-        display: block;
-        margin: 0 auto;
-        /* This makes the logo look like it's glowing onto the page */
-        filter: drop-shadow(0 0 15px rgba(0, 212, 255, 0.4));
-    }
+        .log-entry { 
+            background: var(--surface); 
+            padding: 25px; 
+            border-radius: 4px; 
+            border: 1px solid var(--border);
+            margin: 20px;
+            position: relative;
+        }
+        
+        .version-tag {
+            color: var(--primary);
+            font-family: monospace;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            display: block;
+        }
 
-    .company-name {
-        font-size: 3.5rem; /* Bigger, bolder presence */
-        font-weight: 900;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-        margin-top: 10px;
-        background: linear-gradient(to bottom, #ffffff 40%, #00d4ff 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-</style>
+        .date {
+            color: #555;
+            font-size: 0.85rem;
+            float: right;
+            font-family: monospace;
+        }
+
+        ul { list-style: none; padding: 0; margin-top: 15px; }
+        li { margin-bottom: 10px; padding-left: 15px; border-left: 2px solid var(--accent); }
+
+        footer { margin-top: 80px; font-size: 0.7rem; color: #444; text-align: center; text-transform: uppercase; padding-top: 20px; border-top: 1px solid #111; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="company-name">Project Ledger</div>
+        <a href="index.html" class="back-link">← RETURN TO CORE</a>
+    </header>
+
+    <div class="log-entry">
+        <span class="date">2025-12-18</span>
+        <span class="version-tag">v0.1 - INITIAL COMMIT</span>
+        <p>Official establishment of the Hybrid Forge Tech™ digital architecture and research baseline.</p>
+        <ul>
+            <li>Deployed core site infrastructure (Index, Vision, Architecture, Lineage).</li>
+            <li>Formalized technical definitions for the <strong>Forge System</strong> and <strong>Chimeric Memory</strong> frameworks.</li>
+            <li>Initialized the <strong>CNIS (Carbon Node Intelligence System)</strong> roadmap for the Bridgette core.</li>
+            <li>Established branding and visual identity (Stealth Blue Heart theme).</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>© 2025 HYBRID FORGE TECH. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+</body>
+</html>
