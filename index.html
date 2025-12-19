@@ -9,7 +9,7 @@
             --bg: #000000;      
             --surface: #0a0a0a; 
             --text: #d1d1d1;    
-            --primary: #00d4ff; /* Electric Blue */
+            --primary: #00d4ff; 
             --border: #1a1a1a;
         }
 
@@ -20,25 +20,23 @@
             color: var(--text);
         }
 
-        /* THE GLOWING BAY HEADER */
+        /* THE POWER-ON HEADER */
         header {
             width: 100%;
             padding: 100px 0;
-            background: #000;
-            /* This creates a massive 'Aura' behind your logo */
-            background-image: radial-gradient(circle at center, rgba(0, 212, 255, 0.15) 0%, rgba(0, 64, 128, 0.05) 50%, #000 80%);
+            background: #000000;
             border-bottom: 2px solid #004080;
             text-align: center;
-            box-shadow: 0 10px 50px rgba(0, 212, 255, 0.1);
+            /* Force the background to be black, no gradients */
         }
 
         .logo { 
-            max-width: 550px; /* Big and bold */
+            max-width: 550px; 
             height: auto;
             display: block;
             margin: 0 auto;
-            /* This makes the blue heart and circuits in your PNG actually glow */
-            filter: drop-shadow(0 0 30px rgba(0, 212, 255, 0.6));
+            /* THIS IS THE GLOW: It wraps around your circuit PNG */
+            filter: drop-shadow(0 0 20px #00d4ff) drop-shadow(0 0 40px rgba(0, 212, 255, 0.4));
         }
 
         .company-name {
@@ -50,7 +48,6 @@
             background: linear-gradient(to bottom, #ffffff 40%, var(--primary) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            filter: drop-shadow(0 0 10px rgba(0, 212, 255, 0.4));
         }
 
         .stealth-note { 
@@ -59,7 +56,7 @@
             display: block; 
             letter-spacing: 5px;
             font-weight: bold;
-            margin-top: 10px;
+            text-shadow: 0 0 10px var(--primary);
         }
 
         main { max-width: 1000px; margin: 60px auto; padding: 0 40px; }
@@ -69,7 +66,6 @@
             border-left: 5px solid var(--primary); 
             padding-left: 20px; 
             text-transform: uppercase;
-            font-size: 1.3rem;
             background: linear-gradient(90deg, #001a33, transparent);
         }
         
@@ -77,22 +73,19 @@
             background: var(--surface); 
             padding: 30px; 
             border: 1px solid var(--border);
-            border-radius: 4px;
             margin-bottom: 40px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
         }
 
         .system-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 25px;
-            margin-top: 20px;
         }
 
-        a { color: var(--primary); text-decoration: none; font-weight: bold; transition: 0.3s; }
+        a { color: var(--primary); text-decoration: none; font-weight: bold; }
         a:hover { color: #fff; text-shadow: 0 0 15px var(--primary); }
 
-        footer { text-align: center; padding: 60px 0; border-top: 1px solid #111; color: #444; font-size: 0.8rem; letter-spacing: 2px; }
+        footer { text-align: center; padding: 60px 0; border-top: 1px solid #111; color: #444; font-size: 0.8rem; }
     </style>
 </head>
 <body>
@@ -109,11 +102,11 @@
             <div class="system-grid">
                 <div class="card">
                     <h3 style="color: var(--primary);">M.U.S.E.</h3>
-                    <p>Modular Unified Story Environment. Utilizes the <strong>Forge System</strong> for indexing and <strong>Chimeric Memory</strong> for autonomous folder assimilation.</p>
+                    <p>Modular Unified Story Environment. Utilizes the <strong>Forge System</strong> for indexing and <strong>Chimeric Memory</strong> for autonomous folder scanning.</p>
                 </div>
                 <div class="card">
                     <h3 style="color: var(--primary);">Bridgette</h3>
-                    <p>Flagship Emergent Intelligence. Powered by the <strong>Carbon Node Intelligence System (CNIS)</strong> for non-linear learning and persistence.</p>
+                    <p>Flagship Emergent Intelligence. Powered by the <strong>Carbon Node Intelligence System (CNIS)</strong> with full-color Terminal output.</p>
                 </div>
             </div>
         </section>
