@@ -1,126 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hybrid Forge Tech™</title>
-    <style>
-        :root {
-            --bg: #000000;      
-            --surface: #0a0a0a; 
-            --text: #d1d1d1;    
-            --primary: #00d4ff; 
-            --border: #1a1a1a;
-        }
+<style>
+    /* Replace your current header block with this */
+    header {
+        width: 100%;
+        padding: 50px 0;
+        /* This creates the 'Circuit Blue' wash from your logo */
+        background: radial-gradient(circle at center, #001a33 0%, #000000 70%);
+        border-bottom: 2px solid #004080;
+        box-shadow: 0 10px 30px rgba(0, 212, 255, 0.1);
+        margin-bottom: 40px;
+        text-align: center;
+    }
 
-        body { 
-            font-family: 'Segoe UI', Tahoma, sans-serif; 
-            margin: 0; 
-            background-color: var(--bg);
-            color: var(--text);
-        }
+    .logo { 
+        max-width: 400px; /* Making it much larger as requested */
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        /* This makes the logo look like it's glowing onto the page */
+        filter: drop-shadow(0 0 15px rgba(0, 212, 255, 0.4));
+    }
 
-        /* THE ATMOSPHERIC HEADER */
-        header {
-            width: 100%;
-            padding: 100px 0;
-            position: relative;
-            background: #000;
-            /* Back to the deep, moody gradients you liked */
-            background-image: 
-                radial-gradient(circle at center, rgba(0, 80, 153, 0.25) 0%, transparent 70%),
-                linear-gradient(180deg, #000810 0%, #000000 100%);
-            border-bottom: 2px solid #003366;
-            text-align: center;
-            box-shadow: inset 0 -20px 50px rgba(0, 212, 255, 0.05);
-        }
-
-        .logo { 
-            max-width: 520px; 
-            height: auto;
-            display: block;
-            margin: 0 auto;
-            /* This 'Screen' blend mode makes the blue in your logo 
-               look like it's actually light hitting the glass */
-            filter: drop-shadow(0 0 25px rgba(0, 212, 255, 0.5));
-            transition: transform 0.5s ease;
-        }
-
-        .company-name {
-            font-size: 3.5rem;
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: 6px;
-            margin-top: 25px;
-            /* High-end metallic gradient for the text */
-            background: linear-gradient(to bottom, #ffffff 30%, #555 50%, var(--primary) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .stealth-note { 
-            font-family: monospace; 
-            color: var(--primary); 
-            display: block; 
-            font-weight: bold; 
-            letter-spacing: 4px;
-            opacity: 0.6;
-        }
-
-        main { max-width: 1000px; margin: 40px auto; padding: 0 40px; }
-
-        .card { 
-            background: var(--surface); 
-            padding: 30px; 
-            border: 1px solid var(--border);
-            border-top: 2px solid #003366;
-            border-radius: 4px;
-            margin-bottom: 30px;
-        }
-
-        h2 { 
-            color: #fff; 
-            text-transform: uppercase; 
-            font-size: 1.1rem; 
-            letter-spacing: 2px;
-            margin-bottom: 20px;
-        }
-        
-        a { color: var(--primary); text-decoration: none; font-weight: bold; }
-        a:hover { color: #fff; text-shadow: 0 0 10px var(--primary); }
-
-        footer { text-align: center; padding: 60px; border-top: 1px solid #111; color: #333; font-size: 0.8rem; }
-    </style>
-</head>
-<body>
-
-    <header>
-        <img src="logo.png" alt="Hybrid Forge Tech™" class="logo">
-        <div class="company-name">Hybrid Forge Tech</div>
-        <span class="stealth-note">// SYSTEM_CORE: ACTIVE //</span>
-    </header>
-
-    <main>
-        <div class="card">
-            <h2>The Forge Ecosystem</h2>
-            <p><strong>M.U.S.E.</strong>: Modular Unified Story Environment utilizing the <strong>Forge System</strong> and <strong>Chimeric Memory</strong> protocols.</p>
-            <p><strong>Bridgette</strong>: Emergent Intelligence core powered by the <strong>Carbon Node Intelligence System (CNIS)</strong>.</p>
-        </div>
-
-        <section>
-            <h2>Project Ledger</h2>
-            <ul>
-                <li><a href="vision.html">> ACCESS TECHNICAL VISION</a></li>
-                <li><a href="architecture.html">> ACCESS ARCHITECTURE DEEP-DIVE</a></li>
-                <li><a href="system-lineage.html">> ACCESS SYSTEM LINEAGE</a></li>
-                <li><a href="changelog.html">> ACCESS CHANGELOG</a></li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2025 HYBRID FORGE TECH. ALL RIGHTS RESERVED.</p>
-    </footer>
-
-</body>
-</html>
+    .company-name {
+        font-size: 3.5rem; /* Bigger, bolder presence */
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-top: 10px;
+        background: linear-gradient(to bottom, #ffffff 40%, #00d4ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+</style>
