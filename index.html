@@ -9,7 +9,7 @@
             --bg: #000000;      
             --surface: #0a0a0a; 
             --text: #d1d1d1;    
-            --primary: #00d4ff; /* Electric Blue from Logo */
+            --primary: #00d4ff; 
             --border: #1a1a1a;
         }
 
@@ -23,22 +23,30 @@
             color: var(--text);
         }
 
-        /* THE RADIANT HEADER */
+        /* THE CIRCUIT BOARD HEADER */
         header {
             width: 100%;
             padding: 60px 0;
-            background: radial-gradient(circle at center, #001a33 0%, #000000 80%);
+            position: relative;
+            background-color: #000;
+            /* Radial glow to make the logo pop */
+            background-image: radial-gradient(circle at center, rgba(0, 26, 51, 0.8) 0%, #000 80%),
+            /* THE CIRCUIT PATTERN: Tiny geometric grid */
+            url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg stroke='%23004080' stroke-width='0.5' stroke-opacity='0.4'%3E%3Cpath d='M50 0H20c5.523 0 10 4.477 10 10v30c0 5.523 4.477 10 10 10h30c5.523 0 10-4.477 10-10V10c0-5.523-4.477-10-10-10zM10 80V50c0-5.523-4.477-10-10-10v30c0 5.523 4.477 10 10 10zM80 10V0c-5.523 0-10 4.477-10 10h10zM0 10V0c5.523 0 10 4.477 10 10H0z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
             border-bottom: 2px solid #004080;
             margin-bottom: 40px;
             text-align: center;
+            overflow: hidden;
         }
 
         .logo { 
-            max-width: 450px; /* Large impact size */
+            max-width: 450px; 
             height: auto;
+            position: relative;
+            z-index: 2;
             display: block;
             margin: 0 auto;
-            filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.3));
+            filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.4));
         }
 
         .company-name {
@@ -47,6 +55,8 @@
             text-transform: uppercase;
             letter-spacing: 4px;
             margin-top: 15px;
+            position: relative;
+            z-index: 2;
             background: linear-gradient(to bottom, #ffffff 40%, var(--primary) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -63,7 +73,6 @@
             opacity: 0.7;
         }
 
-        /* CONTENT STYLING */
         section { padding: 0 40px; margin-bottom: 40px; }
 
         h2 { 
@@ -81,14 +90,10 @@
             padding: 25px; 
             border: 1px solid var(--border);
             border-radius: 4px;
-            box-shadow: 0 4px 20px rgba(0, 212, 255, 0.03);
         }
 
-        a { color: var(--primary); text-decoration: none; font-weight: bold; transition: 0.3s; }
+        a { color: var(--primary); text-decoration: none; font-weight: bold; }
         a:hover { color: #fff; text-shadow: 0 0 10px var(--primary); }
-
-        ul { list-style: none; padding: 0; }
-        li { margin-bottom: 15px; padding-left: 15px; border-left: 1px solid #222; }
 
         footer { 
             margin-top: 80px; 
@@ -111,16 +116,16 @@
     <main>
         <section>
             <h2>The Forge Philosophy</h2>
-            <p>Hybrid Forge Tech™ is a proprietary research entity focused on the melding of disparate AI architectures into a unified, emergent whole. We take the blueprint of biological cognition and forge it into digital persistence.</p>
+            <p>Hybrid Forge Tech™ is a proprietary research entity focused on the melding of disparate AI architectures into a unified, emergent whole.</p>
         </section>
 
         <section>
             <h2>The Intelligence Lineage</h2>
             <div class="card">
                 <ul>
-                    <li><strong>M.U.S.E.</strong><br>Modular Unified Story Environment. Utilizing the <em>Chimeric Memory System</em> for active folder-content assimilation and the <em>Forge System</em> for library indexing.</li>
-                    <li><strong>Bridgette</strong><br>Flagship intelligence core. Utilizing the <strong>Carbon Node Intelligence System (CNIS)</strong> for non-linear learning and outward growth.</li>
-                    <li><strong>Project Infinity</strong><br>The culmination of the CNIS architecture: Mapping personality traits and memories into persistent AI Avatars.</li>
+                    <li><strong>M.U.S.E.</strong><br>The <em>Forge System</em> (indexing) + <em>Chimeric Memory</em> (active folder scanning).</li>
+                    <li><strong>Bridgette</strong><br>PC-housed AI utilizing the <strong>Carbon Node Intelligence System (CNIS)</strong>.</li>
+                    <li><strong>Project Infinity</strong><br>Mapping personality traits into persistent AI Avatars.</li>
                 </ul>
             </div>
         </section>
@@ -137,7 +142,6 @@
     </main>
 
     <footer>
-        <p>CONTACT: hybridforgetech@proton.me</p>
         <p>© 2025 HYBRID FORGE TECH. ALL RIGHTS RESERVED.</p>
     </footer>
 
